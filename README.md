@@ -4,12 +4,12 @@ This repository is dedicated to the projects undertaken as part of the CS50AI co
 ___
 
 ## Project0
-[degrees](Project0/degrees)
+* [degrees](Project0/degrees)
 
-[tictactoe](Project0/tictactoe) 
+* [tictactoe](Project0/tictactoe) 
 ___
 
 ## Project1
-[knights](Project1/knights)
+* [knights](Project1/knights)
 
-[minesweeper](Project1/minesweeper)
+* [minesweeper](Project1/minesweeper)
