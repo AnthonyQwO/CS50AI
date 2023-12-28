@@ -1,4 +1,4 @@
-# degrees
+# tictactoe
 
 Implemented a tic-tac-toe AI using the **minimax algorithm**, incorporating **alpha-beta pruning** for optimization. Without pruning, it takes longer to run, especially when the AI goes first.
 
