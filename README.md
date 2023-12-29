@@ -13,3 +13,7 @@ ___
 * [knights](Project1/knights)
 
 * [minesweeper](Project1/minesweeper)
+___
+
+## Project2
+* [pagerank](Project2/pagerank)
