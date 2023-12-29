@@ -5,6 +5,7 @@ import sys
 
 DAMPING = 0.85
 SAMPLES = 10000
+EPS = 1e-3
 
 
 def main():
@@ -57,7 +58,19 @@ def transition_model(corpus, page, damping_factor):
     linked to by `page`. With probability `1 - damping_factor`, choose
     a link at random chosen from all pages in the corpus.
     """
+    ret = {}
+    for p in corpus.keys():
+        ret[p] = (1-damping_factor)/len(corpus)
     
+    if not len(corpus[page]):
+        for p in corpus.keys():
+            ret[p] += damping_factor/len(corpus)
+    else:
+        for p in corpus[page]:
+            ret[p] += damping_factor/len(corpus[page])
+    
+    return ret
+
 
 def sample_pagerank(corpus, damping_factor, n):
     """
@@ -68,8 +81,19 @@ def sample_pagerank(corpus, damping_factor, n):
     their estimated PageRank value (a value between 0 and 1). All
     PageRank values should sum to 1.
     """
-    
+    ret = {}
+    for p in corpus.keys():
+        ret[p] = 0
 
+    for i in range(n):
+        if not i:
+            page = random.choice(list(corpus.keys()))
+        else:
+            page = random.choices(list(pages.keys()), weights=list(pages.values()), k=1)[0]
+        ret[page] += 1/n
+        pages = transition_model(corpus, page, damping_factor)
+        
+    return ret
 
 def iterate_pagerank(corpus, damping_factor):
     """
@@ -80,7 +104,24 @@ def iterate_pagerank(corpus, damping_factor):
     their estimated PageRank value (a value between 0 and 1). All
     PageRank values should sum to 1.
     """
-    raise NotImplementedError
+    ret = {}
+    for p in corpus.keys():
+        ret[p] = 1/len(corpus)
+    
+    while True:
+        temp = {}
+        for p in corpus.keys():
+            temp[p] = (1-damping_factor)/len(corpus)
+            for val in corpus.keys():
+                if p in corpus[val]:
+                    temp[p] += damping_factor*ret[val]/len(corpus[val])
+                elif not len(corpus[val]):
+                    temp[p] += damping_factor*ret[val]/len(corpus)
+        if all(abs(temp[p]-ret[p]) < EPS for p in corpus.keys()):
+            break
+        ret = dict(temp)
+    
+    return ret
 
 
 if __name__ == "__main__":
