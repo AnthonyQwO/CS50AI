@@ -17,3 +17,5 @@ ___
 
 ## Project2
 * [pagerank](Project2/pagerank)
+
+* [heredity](Project2/heredity)
