@@ -16,5 +16,7 @@ The `main` function initializes symbols and knowledge bases for each puzzle, the
 
 ## Usage
 To run the program, execute the script. The output will display the possible identities of characters for each puzzle.
-```$ puzzle.py```
+```bash
+puzzle.py
+```
 

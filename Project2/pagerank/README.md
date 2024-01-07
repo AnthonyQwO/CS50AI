@@ -14,5 +14,7 @@ The program implements the PageRank algorithm, which is used to estimate the imp
 
 ## Usage
 
-```$ python pagerank.py PAGEFOLDER```
+```bash
+python pagerank.py PAGEFOLDER
+```
 `PAGEFOLDER` is your folder with pages like `corpus0` `corpus1` `corpus2`

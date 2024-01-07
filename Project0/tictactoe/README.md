@@ -7,5 +7,7 @@ Implemented a tic-tac-toe AI using the **minimax algorithm**, incorporating **al
 ## Usage
 run ```pip install -r requirements.txt``` before run runner.py.
 
-```$ python runner.py```
+```bash
+python runner.py
+```
 Note that you must switch to the current directory to execute, otherwise, it may result in errors related to font imports.
