@@ -92,6 +92,7 @@ def load_data(filename):
     
     return (evidence, labels)
 
+
 def monthToInt(month):
     months = {
         "Jan": 0,
@@ -108,6 +109,7 @@ def monthToInt(month):
         "Dec": 11
     }
     return months[month]
+
 
 def train_model(evidence, labels):
     """
