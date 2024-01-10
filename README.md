@@ -19,3 +19,11 @@ ___
 * [pagerank](Project2/pagerank)
 
 * [heredity](Project2/heredity)
+___
+
+## Project3
+* [crossword](Project3/crossword)
+___
+
+## Project4
+* [shopping](Project4/shopping)
