@@ -85,7 +85,7 @@ def get_model():
 
         # Convolutional layer. Learn 32 filters using a 3x3 kernel
         tf.keras.layers.Conv2D(
-            32, (3, 3), activation="relu", input_shape=(IMG_WIDTH, IMG_HEIGHT, 3)
+            64, (3, 3), activation="relu", input_shape=(IMG_WIDTH, IMG_HEIGHT, 3)
         ),
 
         # Max-pooling layer, using 2x2 pool size
@@ -95,17 +95,24 @@ def get_model():
         tf.keras.layers.Flatten(),
 
         # Add a hidden layer with dropout
-        tf.keras.layers.Dense(NUM_CATEGORIES * 16, activation="relu"),
-        tf.keras.layers.Dropout(0.5),
+        tf.keras.layers.Dense(64, activation="relu"),
+        # tf.keras.layers.Dropout(0.5),
 
         # Add a hidden layer with dropout
-        tf.keras.layers.Dense(NUM_CATEGORIES * 8, activation="relu"),
-        tf.keras.layers.Dropout(0.3),
-
+        tf.keras.layers.Dense(64, activation="relu"),
+        # tf.keras.layers.Dropout(0.5),
 
         # Add a hidden layer with dropout
-        tf.keras.layers.Dense(NUM_CATEGORIES * 4, activation="relu"),
-        tf.keras.layers.Dropout(0.2),
+        tf.keras.layers.Dense(128, activation="relu"),
+        # tf.keras.layers.Dropout(0.5),
+
+        # Add a hidden layer with dropout
+        tf.keras.layers.Dense(128, activation="relu"),
+        # tf.keras.layers.Dropout(0.5),
+
+        # Add a hidden layer with dropout
+        tf.keras.layers.Dense(256, activation="relu"),
+        # tf.keras.layers.Dropout(0.5),
 
         # Add an output layer with output units for all categories
         tf.keras.layers.Dense(NUM_CATEGORIES, activation="softmax")
