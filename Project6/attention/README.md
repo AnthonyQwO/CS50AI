@@ -20,7 +20,7 @@ python mask.py
 **Example:**
 - Input: Enter the text when prompted.
 ```bash
-[Enter the [MASK] when prompted]
+Enter the [MASK] when prompted
 ```
 A sentence should have exactly a `[MASK]`.
 - Output: The script generates masked language model predictions and attention diagrams.
