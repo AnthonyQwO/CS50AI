@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 **Run the Script:**
 ```bash
-python script_name.py
+python mask.py
 ```
 - Input: Enter the text when prompted.
 - Output: The script generates masked language model predictions and attention diagrams.
