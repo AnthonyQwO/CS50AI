@@ -7,10 +7,15 @@ This Python program is designed to generate and solve crossword puzzles. It util
 ## Usage
 
 ```bash
-python generate.py [structure] [words]
+python generate.py [structure] [words] output.png
 ```
-- `[structure]` is txt save in `data` like `structure0`
-- `[words]` is txt save in `data` like `words0`
+- `[structure]` is txt save in `data` like `./data/structure0.txt`
+- `[words]` is txt save in `data` like `./data/words0.txt`
+
+### Example
+```bash
+generate.py ./data/structure0.txt ./data/words0.txt output.png
+```
 
 ## Classes and Methods
 
