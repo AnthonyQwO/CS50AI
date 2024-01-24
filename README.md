@@ -8,7 +8,7 @@ ___
 |Project |Name|Tag|
 |:------:|:--:|:-:|
 |Project0|[degrees](Project0/degrees)|Search, Graph, BFS|
-|Project0|[tictactoe](Project0/tictactoe)|Search, Backtracking, Minimax Algorithm|
+|Project0|[tictactoe](Project0/tictactoe)|Search, Backtracking, Minimax Algorithm, Alpha-Beta Pruning|
 |Project1|[knights](Project1/knights)||
 |Project1|[minesweeper](Project1/minesweeper)||
 |Project2|[pagerank](Project2/pagerank)||
