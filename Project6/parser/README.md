@@ -1,4 +1,4 @@
-### Natural Language Processing with NLTK
+# parser
 
 This Python script utilizes the Natural Language Toolkit (NLTK) to parse sentences and identify noun phrase chunks within them. The script defines a context-free grammar, preprocesses input sentences, and employs a chart parser to generate parse trees. Additionally, the script identifies and prints noun phrase chunks within the parse trees.
 
