@@ -5,15 +5,15 @@ ___
 
 ## Projects
 
-|Project |Name|Tag|
+|Project |Name|Key Words|
 |:------:|:--:|:-:|
 |Project0|[degrees](Project0/degrees)|Search, Graph, BFS|
 |Project0|[tictactoe](Project0/tictactoe)|Search, Backtracking, Minimax Algorithm, Alpha-Beta Pruning|
-|Project1|[knights](Project1/knights)||
-|Project1|[minesweeper](Project1/minesweeper)||
-|Project2|[pagerank](Project2/pagerank)||
-|Project2|[heredity](Project2/heredity)||
-|Project3|[crossword](Project3/crossword)||
+|Project1|[knights](Project1/knights)|Logic, Model Check, Puzzles|
+|Project1|[minesweeper](Project1/minesweeper)|Minesweeper, Logic, Model Check|
+|Project2|[pagerank](Project2/pagerank)|Makov Chain, Probability|
+|Project2|[heredity](Project2/heredity)|Bayesian Network, Probability|
+|Project3|[crossword](Project3/crossword)|Backtracking Search, AC-3 Algorithm, Constraint satisfaction problem(CSPs)|
 |Project4|[shopping](Project4/shopping)||
 |Project4|[nim](Project4/nim)||
 |Project5|[traffic](Project5/traffic)||
