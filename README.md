@@ -14,8 +14,8 @@ ___
 |Project2|[pagerank](Project2/pagerank)|Makov Chain, Probability|
 |Project2|[heredity](Project2/heredity)|Bayesian Network, Probability|
 |Project3|[crossword](Project3/crossword)|Backtracking Search, AC-3 Algorithm, Constraint satisfaction problem(CSPs)|
-|Project4|[shopping](Project4/shopping)||
-|Project4|[nim](Project4/nim)||
-|Project5|[traffic](Project5/traffic)||
-|Project6|[parser](Project6/parser)||
-|Project6|[attention](Project6/attention)||
+|Project4|[shopping](Project4/shopping)|K-Nearest Neighbors, Classifier|
+|Project4|[nim](Project4/nim)|Q-learning, Reinforcement Learning, Game Theory|
+|Project5|[traffic](Project5/traffic)|CNNs, Image Classification|
+|Project6|[parser](Project6/parser)|Context-free grammar rules, Parse trees|
+|Project6|[attention](Project6/attention)|Transformers, Attention, BERT|
