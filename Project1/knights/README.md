@@ -1,6 +1,6 @@
 # knights
 
-This Python program is a solver for a set of logic puzzles involving characters who may be either knights or knaves. Knights always tell the truth, while knaves always lie. The program uses propositional logic to represent the information given in each puzzle and employs a model-checking algorithm to determine the possible identities of the characters.
+This Python program is a solver for a set of [logic puzzles](https://en.wikipedia.org/wiki/Knights_and_Knaves) involving characters who may be either knights or knaves. Knights always tell the truth, while knaves always lie. The program uses propositional logic to represent the information given in each puzzle and employs a model-checking algorithm to determine the possible identities of the characters.
 
 ## Symbols
 
