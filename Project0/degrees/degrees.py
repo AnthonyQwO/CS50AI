@@ -84,6 +84,18 @@ def main():
             print(f"{i + 1}: {person1} and {person2} starred in {movie}")
 
 
+def return_path(node):
+    """
+    Returns the path from the source to the target
+    """
+    path = []
+    while node.parent is not None:
+        path.append((node.action, node.state))
+        node = node.parent
+    path.reverse()
+    return path
+
+
 def shortest_path(source, target):
     """
     Returns the shortest list of (movie_id, person_id) pairs
@@ -94,23 +106,23 @@ def shortest_path(source, target):
     explored = set()
     frontier = QueueFrontier()
     frontier.add(Node(source, None, None))
+    if source == target:
+        return []
 
     while not frontier.empty():
-        if frontier.empty():
-            return None
+        # Choose a node from the frontier
         curNode = frontier.remove()
         explored.add(curNode.state)
+
+        # Add neighbors to the frontier
         for movie, person in neighbors_for_person(curNode.state):
+            # If the person is not in the frontier or explored, add it to the frontier
             if not frontier.contains_state(person) and person not in explored:
                 child = Node(person, curNode, movie)
                 frontier.add(child)
+                # If the child is the target, return the path
                 if child.state == target:
-                    ret = []
-                    while child.parent is not None:
-                        ret.append((child.action, child.state))
-                        child = child.parent
-                    ret.reverse()
-                    return ret       
+                    return return_path(child)
     return None
 
 
